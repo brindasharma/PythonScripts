@@ -22,6 +22,7 @@ gis = GIS("https://www.arcgis.com", "bsharma_startups", "*****")
 #conver feature collection to GeoJson
 GeoJson = featureset.to_geojson
 #upload a geojson
+import json
 GeoJson = json.loads(GeoJson)
 GeoJson
 
